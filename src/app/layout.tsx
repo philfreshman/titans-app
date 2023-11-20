@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Navigation from "./components/navigation";
-import store from "@/app/store/store"
-import {Provider} from "react-redux"
-import Roles from "@/app/roles/page"
-import Providers from "@/app/store/provider"
+import Providers from "@/src/store/provider"
+import Navbar from "@/src/components/navbar"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <body suppressHydrationWarning={true}>
-    <Navigation />
+    <Navbar />
     <Providers>
       {children}
     </Providers>

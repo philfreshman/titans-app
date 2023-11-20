@@ -1,10 +1,10 @@
 "use client"
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectRoles } from '@/app/store/slices/roleSlice';
-import { selectRights } from '@/app/store/slices/rightsSlice';
-import { selectRoleRights } from '@/app/store/slices/roleRightsSlice';
-import { addRoleRight, removeRoleRight } from '@/app/store/slices/roleRightsSlice';
+import { selectRoles } from '@/src/store/slices/roleSlice';
+import { selectRights } from '@/src/store/slices/rightsSlice';
+import { selectRoleRights } from '@/src/store/slices/roleRightsSlice';
+import { addRoleRight, removeRoleRight } from '@/src/store/slices/roleRightsSlice';
 
 const Administration: React.FC = () => {
   const dispatch = useDispatch();

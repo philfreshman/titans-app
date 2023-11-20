@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {addRight, deleteRight, editRight, selectRights} from '@/app/store/slices/rightsSlice';
+import {addRight, deleteRight, editRight, selectRights} from '@/src/store/slices/rightsSlice';
 
 const Rights: React.FC = () => {
   const dispatch = useDispatch();

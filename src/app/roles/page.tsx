@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addRole, selectRoles, deleteRole, editRole } from '@/app/store/slices/roleSlice'
+import { addRole, selectRoles, deleteRole, editRole } from '@/src/store/slices/roleSlice'
 
 const Roles: React.FC = () => {
   const dispatch = useDispatch();

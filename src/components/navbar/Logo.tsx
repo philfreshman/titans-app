@@ -4,10 +4,11 @@ function Logo(){
   return (
     <>
       <Image
+        priority
         src="/titans.png"
         alt="Logo"
         width="200"
-        height="0"
+        height="55"
         className="relative"
       />
     </>
