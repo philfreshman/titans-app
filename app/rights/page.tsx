@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {addRight, deleteRight, editRight, selectRights} from '@/app/slices/rightsSlice';
+import {addRight, deleteRight, editRight, selectRights} from '@/app/store/slices/rightsSlice';
 
 const Rights: React.FC = () => {
   const dispatch = useDispatch();
@@ -36,7 +36,7 @@ const Rights: React.FC = () => {
 
   return (
     <div className="max-w-md mx-auto my-8 p-6 bg-white rounded-md shadow-md">
-      <h1 className="text-2xl font-semibold mb-4 text-black">Roles</h1>
+      <h1 className="text-2xl font-semibold mb-4 text-black">Rechte</h1>
       <ul className="list-disc pl-4 mb-4">
         {rights.map((right, index) => (
           <li key={index} className="text-gray-700 flex items-center justify-between">
@@ -52,7 +52,7 @@ const Rights: React.FC = () => {
                   onClick={handleSaveEdit}
                   className="bg-blue-500 text-white px-2 py-1 rounded-md"
                 >
-                  Save
+                  Speichern
                 </button>
               </>
             ) : (
@@ -63,13 +63,13 @@ const Rights: React.FC = () => {
                     onClick={() => handleEditRight(index)}
                     className="text-blue-500 ml-2 cursor-pointer"
                   >
-                    Edit
+                    Bearbeiten
                   </button>
                   <button
                     onClick={() => handleDeleteRight(index)}
                     className="text-red-500 ml-2 cursor-pointer"
                   >
-                    Delete
+                    Löschen
                   </button>
                 </div>
               </>
@@ -89,7 +89,7 @@ const Rights: React.FC = () => {
           onClick={handleAddRight}
           className="bg-blue-500 text-white px-4 py-2 rounded-md"
         >
-          Add Role
+          Recht Hinzufügen
         </button>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
-import rolesReducer from "../slices/roleSlice"
-import rightsReducer from "../slices/rightsSlice"
+import rolesReducer from "@/app/store/slices/roleSlice"
+import rightsReducer from "@/app/store/slices/rightsSlice"
 
 const store = configureStore({
   reducer: {
@@ -10,3 +10,4 @@ const store = configureStore({
 })
 
 export default store
+

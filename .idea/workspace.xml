@@ -5,16 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e518e399-5aa4-48fb-8b1d-21ff9550a12f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/store/slices/roleRightsSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/administration/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/administration/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/navigation/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navigation/navbar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/rights/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/rights/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/roles/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/roles/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/slices/rightsSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/slices/rightsSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/slices/roleSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/slices/roleSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/slices/rightsSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/slices/rightsSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/slices/roleSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/slices/roleSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/reduxProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/reduxProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,6 +102,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/store" />
+      <recent name="$PROJECT_DIR$/app/index" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/pages" />
     </key>
@@ -100,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700477312152</updated>
       <workItem from="1700477313580" duration="4739000" />
-      <workItem from="1700482469652" duration="2849000" />
+      <workItem from="1700482469652" duration="5719000" />
     </task>
     <servers />
   </component>

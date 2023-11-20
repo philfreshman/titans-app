@@ -8,7 +8,9 @@ function Navbar() {
       <div className="w-full h-20 bg-emerald-800 sticky top-0">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
-            <Logo />
+            <Link href="/">
+              <Logo />
+            </Link>
 
             <ul className="hidden md:flex gap-x-6 text-white ">
               <li>
