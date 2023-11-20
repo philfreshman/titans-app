@@ -5,6 +5,7 @@ import Navigation from "./components/navigation";
 import store from "@/app/store/store"
 import {Provider} from "react-redux"
 import Roles from "@/app/roles/page"
+import Providers from "@/app/store/provider"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,20 +15,19 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
-}: {
+   children,
+ }: {
   children: React.ReactNode
 }) {
   return (
-    <>
-      <Navigation />
-        <div className="w-full flex justify-center">
-          {children}
-        </div>
-    </>
-  //   <Provider store={store}>
-  //     <Roles/>
-  //   </Provider>
+    <html lang="en">
+    <body suppressHydrationWarning={true}>
+    <Navigation />
+    <Providers>
+      {children}
+    </Providers>
+    </body>
+    </html>
   )
 }
 

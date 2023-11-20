@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e518e399-5aa4-48fb-8b1d-21ff9550a12f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/navigation/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/pages/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/slices/roleSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/titans.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/slices/rightsSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/provider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/reduxProvider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/navigation/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navigation/navbar/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/rights/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/rights/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/roles/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/roles/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/slices/roleSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/slices/roleSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +27,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2YR91nLCF41B7nK674m8NnpVDKB" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -51,6 +50,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/philipswiezak/Projects/titans-app/app/slices",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,7 +62,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/slices" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/store" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/pages" />
     </key>
@@ -75,7 +79,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700477312152</updated>
-      <workItem from="1700477313580" duration="3785000" />
+      <workItem from="1700477313580" duration="4739000" />
+      <workItem from="1700482469652" duration="2120000" />
     </task>
     <servers />
   </component>

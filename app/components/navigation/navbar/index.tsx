@@ -13,17 +13,17 @@ function Navbar() {
             <ul className="hidden md:flex gap-x-6 text-white ">
               <li>
                 <Link href="/rights">
-                  <p>Rechte / Rights</p>
+                  <p>Rechte</p>
                 </Link>
               </li>
               <li>
                 <Link href="/roles">
-                  <p>Rollen / Roles</p>
+                  <p>Rollen</p>
                 </Link>
               </li>
               <li>
                 <Link href="/administration">
-                  <p>Verwaltung / Administration</p>
+                  <p>Verwaltung</p>
                 </Link>
               </li>
             </ul>

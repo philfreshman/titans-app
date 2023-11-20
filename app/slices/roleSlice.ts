@@ -1,12 +1,11 @@
-// rolesSlice.ts
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 interface RolesState {
-  list: string[];
+  list: string[]
 }
 
 const initialState: RolesState = {
-  list: [],
+  list: []
 };
 
 const rolesSlice = createSlice({
@@ -16,9 +15,9 @@ const rolesSlice = createSlice({
     addRole: (state, action: PayloadAction<string>) => {
       state.list.push(action.payload);
     },
-  },
-});
+  }
+})
 
-export const { addRole } = rolesSlice.actions;
-export const selectRoles = (state: { roles: RolesState }) => state.roles.list;
-export default rolesSlice.reducer;
+export const { addRole } = rolesSlice.actions
+export const selectRoles = (state: { roles: RolesState }) => state.roles.list
+export default rolesSlice.reducer
