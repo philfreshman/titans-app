@@ -3,35 +3,30 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectRoles } from '@/src/store/slices/roleSlice';
 import { selectRights } from '@/src/store/slices/rightsSlice';
-import { selectRoleRights } from '@/src/store/slices/roleRightsSlice';
-import { addRoleRight, removeRoleRight } from '@/src/store/slices/roleRightsSlice';
+import {addRightRole, deleteRightRole, selectRightsRoles} from '@/src/store/slices/rightsRolesSlice'
+
 
 const Administration: React.FC = () => {
   const dispatch = useDispatch();
   const roles = useSelector(selectRoles);
   const rights = useSelector(selectRights);
-  const roleRights = useSelector(selectRoleRights);
+  const rightsRoles = useSelector(selectRightsRoles);
   const [selectedRole, setSelectedRole] = useState<string>('');
   const [selectedRight, setSelectedRight] = useState<string>('');
 
   const handleAddRoleRight = () => {
-    console.log(selectedRole)
-    console.log(selectedRight)
-    if (selectedRole && selectedRight) {
-      console.log("both selected")
-      dispatch(addRoleRight({ role: selectedRole, right: selectedRight }));
-      // setSelectedRight('');
-      // setSelectedRole('');
-      console.log('added')
+    if (selectedRight && selectedRole) {
+      dispatch(addRightRole({right: selectedRight, role: selectedRole}))
+      setSelectedRight('');
+      setSelectedRole('');
     }
   };
 
   const handleRemoveRoleRight = () => {
     if (selectedRole && selectedRight) {
-      dispatch(removeRoleRight({ role: selectedRole, right: selectedRight }));
+      dispatch(deleteRightRole({ role: selectedRole, right: selectedRight }));
       setSelectedRight('');
       setSelectedRole('');
-      console.log('removed')
     }
   };
 
@@ -83,13 +78,14 @@ const Administration: React.FC = () => {
         </button>
       </div>
 
-      {/* Display the list of rights-roles pairs */}
-      <div className="mt-4">
-        <h2 className="text-xl font-semibold mb-2">Rollen-Rechte Liste</h2>
+      <div className="mt-6">
+
         <ul>
-          {roleRights !== undefined && Object.entries(roleRights).map(([role, associatedRights], index) => (
+          {Object.entries(rightsRoles)
+            .sort(([, a], [, b]) => a.right.localeCompare(b.right))
+            .map(([_, rr], index) => (
             <li key={index}>
-              <strong>{role}:</strong> {associatedRights.join(', ')}
+              {rr.right}: {rr.role}
             </li>
           ))}
         </ul>

@@ -10,7 +10,6 @@ const Rights: React.FC = () => {
   const [editIndex, setEditIndex] = useState<number | null>(null);
   const [editedRight, setEditedRight] = useState<string>('');
 
-
   const handleAddRight = () => {
     if (newRight.trim() !== '') {
       dispatch(addRight(newRight));

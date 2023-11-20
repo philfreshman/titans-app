@@ -13,6 +13,7 @@ const rolesSlice = createSlice({
   initialState,
   reducers: {
     addRole: (state, action: PayloadAction<string>) => {
+      console.log('rolestate', state.list)
       state.list.push(action.payload);
     },
     deleteRole: (state, action: PayloadAction<number>) => {

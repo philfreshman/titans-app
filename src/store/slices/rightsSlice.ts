@@ -13,6 +13,7 @@ const rightsSlice = createSlice({
   initialState,
   reducers: {
     addRight: (state, action: PayloadAction<string>) => {
+      console.log(state.list)
       state.list.push(action.payload);
     },
     deleteRight: (state, action: PayloadAction<number>) => {
