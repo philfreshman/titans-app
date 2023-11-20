@@ -14,10 +14,17 @@ const rightsSlice = createSlice({
   reducers: {
     addRight: (state, action: PayloadAction<string>) => {
       state.list.push(action.payload);
+    },
+    deleteRight: (state, action: PayloadAction<number>) => {
+      state.list.splice(action.payload, 1);
+    },
+    editRight: (state, action: PayloadAction<{ index: number; newRight: string }>) => {
+      const { index, newRight } = action.payload;
+      state.list[index] = newRight;
     }
   }
 })
 
-export const { addRight } = rightsSlice.actions
+export const { addRight, deleteRight,editRight } = rightsSlice.actions
 export const selectRights = (state: { rights: RightsState }) => state.rights.list
 export default rightsSlice.reducer

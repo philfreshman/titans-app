@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e518e399-5aa4-48fb-8b1d-21ff9550a12f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/slices/rightsSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/reduxProvider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/navigation/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navigation/navbar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/rights/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/rights/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/roles/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/roles/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/slices/rightsSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/slices/rightsSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/slices/roleSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/slices/roleSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +18,31 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1700485146" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="third-hour" />
+                    <option name="lastUsedInstant" value="1700485142" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -80,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700477312152</updated>
       <workItem from="1700477313580" duration="4739000" />
-      <workItem from="1700482469652" duration="2120000" />
+      <workItem from="1700482469652" duration="2849000" />
     </task>
     <servers />
   </component>
