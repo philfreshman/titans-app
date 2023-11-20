@@ -82,7 +82,7 @@ const Rights: React.FC = () => {
           value={newRight}
           onChange={(e) => setNewRight(e.target.value)}
           className="flex-1 p-2 border border-gray-300 rounded-md text-black"
-          placeholder="New Role"
+          placeholder="Neues Recht"
         />
         <button
           onClick={handleAddRight}
