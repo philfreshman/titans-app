@@ -2,6 +2,10 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <h1>Hello</h1>
-  )
+    <>
+      <div className="container mx-auto px-4">
+
+      </div>
+    </>
+  );
 }
