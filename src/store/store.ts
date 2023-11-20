@@ -1,11 +1,9 @@
-"use client";
-
 import {combineReducers, configureStore} from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'
 import rolesReducer from "@/src/store/slices/roleSlice";
 import rightsReducer from "@/src/store/slices/rightsSlice";
-import {FLUSH, PAUSE, PERSIST, PURGE, REGISTER, REHYDRATE} from "redux-persist/es/constants"
+import {PERSIST} from "redux-persist/es/constants"
 
 // Configuration for redux-persist
 const persistConfig = {
@@ -25,7 +23,7 @@ const store = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+        ignoredActions: [PERSIST],
       },
     }),
 });
