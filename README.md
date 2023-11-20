@@ -1,4 +1,4 @@
 # titans-app
 
 
-### demo: [titans-app-omega.vercel.app](titans-app-omega.vercel.app)  
+### demo: [titans-app-omega.vercel.app](https://titans-app-omega.vercel.app/)  
